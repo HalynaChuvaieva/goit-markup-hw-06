@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +42,13 @@
               <use href="./images/icons.svg#burger"></use>
             </svg>
         </button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button type="button" class="mobile-menu-close"></button>
+            </div>
         </div>
     </header>
 
@@ -418,7 +426,7 @@
         </div>
         </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
         <div class="modal">
             <button type="button" class="close-button">
                 <svg class="close" width="8" height="8">
@@ -465,12 +473,11 @@
                 <div class="modal-field">
                     <input type="checkbox" value="true" name="user-privacy" id="user-privacy" class="modal-check visually-hidden" required>
                     <label for="user-privacy" class="policy">
-                        <span class="checkbox">
-                            <svg class="check-icon" width="10" height="8">
-                                <use href="./images/icons.svg#check"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the<a class="modal-link" href="">Privacy Policy</a>
+                            <span class="checkbox">
+                                <svg class="check-icon" width="10" height="8">
+                                    <use href="./images/icons.svg#check"></use>
+                                </svg>
+                            </span><div class="accept">I accept the terms and conditions of the <a class="modal-link" href="">Privacy Policy</a></div>
                     </label>
                 </div>
                 <button class="button" type="submit">Send</button>
