@@ -104,14 +104,21 @@ img {
         gap: 40px;
         align-items: center;
     }
-    .contacts-list {
+    .adress-container {
         display: flex;
         flex-direction: column;
         gap: 12px;
+    }
+    .contacts {
+        display: block;
+        color: #434455;
         font-style: normal;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav-container {
         display: flex; 
@@ -169,4 +176,25 @@ img {
                 .contacts:focus {
                     color: #404bbf;
                 }
+        
+}
+
+@media screen and (min-width: 1158px){
+    .page-logo{
+        margin-right: 76px;
+    }
+    .contacts-list{
+        display: flex;
+    }
+    .adress-container{
+        align-items: center;
+        gap: 40px;
+        flex-direction: row;
+    }
+    .contacts{
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
