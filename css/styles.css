@@ -258,6 +258,201 @@ img {
 .mobile-menu-nav{
     margin-bottom: auto;
 }
+.mobile-nav-link{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+}
+.current {
+    position: relative;
+    color: #404bbf;
+}
+.mobile-nav-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.mobile-adress-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.mobile-adress-item:first-child{
+    margin-bottom: 24px;
+}
+.mobile-nav-link:hover, .mobile-nav-link:focus, .mobile-adress-link:hover, .mobile-adress-link:focus{
+    color: #404bbf;
+}
+.mobile-adress-container{
+    margin-bottom: 48px;
+}
+.social-media {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.social-link {
+    position: relative;
+    background: #4D5AE5;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #404BBF;
+}
+
+.social-link .media-icon {
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.first-section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people@1x.jpg);
+    padding: 72px 0;
+    max-width: 320px;
+    background-color: #2E2F42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-title {
+    margin: 0 auto 72px;
+    max-width: 216px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    line-height: 1.11;
+}
+@media screen and (min-resolution: 2x) and (max-width: 767px){
+    .first-section{
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people@2x.jpg);
+    }
+}
+@media screen and (min-width: 768px){
+    .first-section{
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_tablet@1x.jpg);
+    } 
+    .page-title{
+        margin-bottom: 36px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+@media screen and (min-resolution: 2x) and (min-width: 768px){
+    .first-section{
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_tablet@2x.jpg);
+    }
+}
+@media screen and (min-width: 1440px){
+    .first-section{
+        max-width: 1440px;
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people_tablet@1x.jpg), url(../images/people_desktop@1x.jpg);
+    }
+    .page-title{
+        margin-bottom: 48px;
+    }
+}
+@media screen and (min-resolution: 2x) and (min-width: 1440px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/people_desktop@2x.jpg);
+    }
+}
+
+.section{
+    padding: 96px 0;
+}
+
+.icon-box{
+    display: none;
+}
+.properties-container{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+.feature-description{
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .properties-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .prop-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .feature{
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1440px){
+    .properties-container{
+        flex-wrap: nowrap;
+    }
+    .section {
+        padding: 120px 0;
+    }
+    .feature {
+        color: #2E2F42;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .feature-description {
+        font-weight: 400px;
+    }
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        padding: 24px 100px;
+    }
+    .prop-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
