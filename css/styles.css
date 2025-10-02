@@ -130,6 +130,7 @@ img {
         margin-right: 120px;
     }
         .nav-link {
+            padding: 24px 0;
             display: flex;
             gap: 20px;
             flex-direction: column;
@@ -247,6 +248,9 @@ img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+.mobile-menu .container{
+    align-items: flex-start;
+}
 .mobile-menu-container{
     position: relative;
     padding-top: 72px;
@@ -271,6 +275,7 @@ img {
 .mobile-nav-item:not(:last-child){
     margin-bottom: 40px;
 }
+
 .mobile-adress-link{
     font-style: normal;
     font-weight: 500;
@@ -584,7 +589,6 @@ img {
     transform: translate(0);
 }
 .app-card {
-    width: 288px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -712,7 +716,7 @@ img {
 
 @media screen and (min-width: 1158px){
     .page-footer .container {
-        padding-left: 0;
+        padding-left: 15рх;
         flex-wrap: nowrap;
         gap: 0;
     }
